@@ -6,7 +6,7 @@ const manifest = {
     id: 'com.lateststreaming.addon',
     version: '1.0.0',
     name: 'Latest Streaming Releases',
-    description: 'Discover the latest TV series and movies released on streaming platforms',
+    description: 'Discover the latest TV series and movies released on streaming platforms in USA, UK, Canada, New Zealand and Australia',
     logo: 'https://via.placeholder.com/256x256/007acc/ffffff?text=LSR',
     background: 'https://via.placeholder.com/1920x1080/1a1a1a/ffffff?text=Latest+Streaming',
     resources: ['catalog'],
@@ -36,8 +36,8 @@ const manifest = {
 const builder = new addonBuilder(manifest);
 
 // API configuration - using environment variables for production
-const TMDB_API_KEY = process.env.TMDB_API_KEY || 'a19303475ba51d055949062229dc89a0';
-const OMDB_API_KEY = process.env.OMDB_API_KEY || 'b879cac6';
+const TMDB_API_KEY = process.env.TMDB_API_KEY;
+const OMDB_API_KEY = process.env.OMDB_API_KEY;
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 const TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w500';
 
